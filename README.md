@@ -1,1 +1,1 @@
-A web application to help me co-worker determine whether he needs to be wearing a sombrero to protect his head and neck from the sun.
+A web application to help my co-worker determine whether he needs to be wearing a sombrero to protect his head and neck from the sun. Updated to include a backend running on node/express to allow for further development that may require a backend.
