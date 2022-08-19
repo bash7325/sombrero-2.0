@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/sombrero-favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>The Sombrero App</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><strong>Is It Sombrero Weather?</strong><img id="sunshine" src="./assets/images/sunshine.png"
+                    alt="sunshine" class="sunshine"></li>
+        </ul>
+        <ul>
+            <button class="about-btn" data-target="modal-example" onClick="toggleModal(event)">
+                About
+            </button>
+
+            <!-- Modal -->
+            <dialog id="modal-example">
+                <article>
+                    <a href="#close" aria-label="Close" class="close" data-target="modal-example"
+                        onClick="toggleModal(event)">
+                    </a>
+                    <h3>The Sombrero App</h3>
+                    <p>
+                        Benny loves the sunshine, but his neck and head do not. This app was made so Benny will know if
+                        he needs to wear his sombrero to protect his delicate skin from the sun. Even if you aren't
+                        Benny, you can use this app to determine if you should take measures to protect yourself from
+                        harmful UV rays.
+                    </p>
+                </article>
+            </dialog>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1 style="text-align:center">Does Benny Need to Wear His Sombrero?</h1>
+        <div class="button-container">
+            <button class="buttons" id="sombrero-button">Click Here</button>
+        </div>
+        <section id="sombrero-container"></section>
+        <!-- button to go to to weather -->
+        <div class="button-container">
+            <button class="hide buttons" id="weather-button">But Why?!</button>
+        </div>
+        <section class="hide" id="weather-container"></section>
+    </main>
+    <audio id="hat-dance">
+        <source src="./assets/audio/mexican_hat_dance.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sad-trombone">
+        <source src="./assets/audio/sad_trombone.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="./assets/script.js"></script>
+
+</html>
