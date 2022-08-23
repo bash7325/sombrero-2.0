@@ -18,6 +18,11 @@
                     alt="sunshine" class="sunshine"></li>
         </ul>
         <ul>
+            <!-- login button -->
+            
+            <button class="about-btn" data-target="modal-login" onClick="toggleModal(event)">
+                Login
+            </button>
             <button class="about-btn" data-target="modal-example" onClick="toggleModal(event)">
                 About
             </button>
@@ -37,6 +42,35 @@
                     </p>
                 </article>
             </dialog>
+            <dialog id="modal-login">
+                <article>
+                    <a href="#close" aria-label="Close" class="close" data-target="modal-login"
+                        onClick="toggleModal(event)">
+                    </a>
+                    <h3>Login or Sign Up</h3>
+                    <form action="login" method="post">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                    </form>
+                    
+                    <p>Not registered? <a href="#signup" data-target="modal-signup"
+                        onClick="toggleModal(event)">Sign up</a> for your free Sombrero App account</p>
+                    
+                </article>
+            </dialog>
+            <dialog id="modal-signup">
+                <article>
+                    <a href="#close" aria-label="Close" class="close" data-target="modal-signup"
+                        onClick="toggleModal(event)">
+                    </a>
+                    <h3>Sign Up for The Sombrero App</h3>
+                    <form action="signup" method="post">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="submit" value="Sign Up">
+                    </form>
+                </article>
         </ul>
     </nav>
     <main class="container">
