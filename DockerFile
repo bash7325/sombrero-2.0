@@ -1,12 +1,12 @@
-
+bashCopy code
 # Use the official Node.js image as the base image
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /sombrero-2.0
+WORKDIR /app
 
 # Copy the application files into the working directory
-COPY . /sombrero-2.0/
+COPY . /app
 
 # Install the application dependencies
 RUN npm install
